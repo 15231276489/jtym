@@ -1,9 +1,0 @@
-diff a/index.html b/index.html	(rejected hunks)
-@@ -4,6 +4,7 @@
- 	<meta charset="utf-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
- 	<title>Raleway - Creative Animated Template</title>
-+    <link href="app.ico" rel="icon">
- 	<link rel="stylesheet" href="css/bootstrap.min.css">
- 	<link rel="stylesheet" href="css/font-awesome.min.css">
- 	<link rel="stylesheet" href="css/simple-line-icons.css">
