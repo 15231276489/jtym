@@ -12,6 +12,14 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="sweetalert/dist/sweetalert.css">
 <link rel="stylesheet" href="css/stisla.css">
+<style>
+body{
+	
+}
+a{
+	cursor:url(zhizhen2.png),auto;
+}
+</style>
 </head>
 
 <body style="cursor:url(zhizhen.png),auto;">
