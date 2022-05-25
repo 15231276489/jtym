@@ -1,0 +1,256 @@
+﻿@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+img {
+    vertical-align: middle;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    // background: rgba(33, 124, 236, 0.8);
+    background:rgba(16,57,110,0.9);
+    display: flex;
+    justify-content: space-between;
+    .headerLeft {
+        display: flex;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: 40px;
+                height: 20px;
+            }
+            a {
+                color: #FFFFFF;
+            }
+        }
+    }
+    .headerRight {
+        padding: 5px;
+        box-sizing: border-box;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@keyframes xz {
+    /*执行动画*/
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mp3 {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 80px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    padding: 3px;
+    box-sizing: border-box;
+    img {
+        animation: xz 10s linear infinite;/*自定义动画：名称 时间 速度（匀速）*/
+        animation-play-state: running;
+    }
+}
+
+.swiper-slide {
+    background: url(../img/bg.jpg);
+    background-size: 100%;
+}
+
+.cen {
+    margin: 10px 0;
+}
+
+.navItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    div {
+        width: 22%;
+        img {
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            padding: 5px 0;
+            background: rgba(0, 0, 0, 0.2);
+            color: #ffffff;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+    .navItem-on p {
+        color: #ffcc99;
+    }
+}
+
+.navTex {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position:relative;
+    img {
+        display: none;
+    }
+    .navTex-on {
+        display: block;
+    }
+    .hand{
+        position:absolute;
+        top:48px;
+        right:24px;
+        display: inline-block;
+
+    }
+}
+
+.datu {
+    background: url(../img/img.jpg) no-repeat;
+    background-size: 100%;
+    position: relative;
+    img {
+        width: 1.8rem;
+        position: absolute;
+    }
+     .a01-btn {
+        top: 51%;
+        left: 9%;
+    }
+    .a02-btn {
+        top: 52%;
+        left: 16%;
+    }
+    .a03-btn {
+        top: 53%;
+        left: 23%;
+    }
+    .brh-btn {
+        top: 38%;
+        left: 50%;
+    }
+    .nrh-btn {
+        top: 43%;
+        left: 63%;
+    }
+    .hy-btn {
+        top: 48%;
+        left: 82%;
+    }
+    .yf-btn {
+        top: 77%;
+        left: 73%;
+    }
+}
+
+
+/*底部切换*/
+
+footer {
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    a {
+        display: block;
+        width: 20%;
+        height: 100%;
+        font-size: 1.2rem;
+        color: #555454;
+        text-align: center;
+        padding: 0.5rem 0;
+        div {
+            margin: auto;
+            width: 25px;
+            height: 25px;
+            margin-bottom: 5px;
+        }
+        &:nth-child(1) div {
+            background: url(../img/footer/icon-1.png);
+            background-size: 100%;
+        }
+        &:nth-child(2) div {
+            background: url(../img/footer/icon-2.png);
+            background-size: 100%;
+        }
+        &:nth-child(3) div {
+            background: url(../img/footer/icon-3.png);
+            background-size: 100%;
+        }
+        &:nth-child(4) div {
+            background: url(../img/footer/icon-4.png);
+            background-size: 100%;
+        }
+        &:nth-child(5) div {
+            background: url(../img/footer/icon-5.png);
+            background-size: 100%;
+        }
+        &:nth-child(1).footer-a-on div {
+            background: url(../img/footer/icon-1-on.png);
+            background-size: 100%;
+        }
+        &:nth-child(2).footer-a-on div {
+            background: url(../img/footer/icon-2-on.png);
+            background-size: 100%;
+        }
+        &:nth-child(3).footer-a-on div {
+            background: url(../img/footer/icon-3-on.png);
+            background-size: 100%;
+        }
+        &:nth-child(4).footer-a-on div {
+            background: url(../img/footer/icon-4-on.png);
+            background-size: 100%;
+        }
+        &:nth-child(5).footer-a-on div {
+            background: url(../img/footer/icon-5-on.png);
+            background-size: 100%;
+        }
+    }
+    .footer-a-on {
+        color: #344eed;
+    }
+}

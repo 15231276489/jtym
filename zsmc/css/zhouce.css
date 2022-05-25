@@ -1,0 +1,96 @@
+
+.wbas_content {
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+}
+
+.wbas_content>img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    touch-action: none;
+}
+.wbas_content>img.wbas_button {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: auto;
+    touch-action: auto;
+}
+
+.wbas_content>.wbas_axisside {
+    display: block;
+    /*background: none;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: auto;
+    /*overflow: hidden;*/
+    cursor: e-resize;
+}
+
+.wbas_content>.wbas_axisside>.wbas_frames {
+    display: none;
+    background: none;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    left: 0;
+    top: 0;
+}
+.wbas_content>.wbas_axisside>.wbas_frames>img {
+    display: none;
+    position: absolute;
+    width:80%;
+    height:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+    touch-action: none;
+}
+.wbas_content>.wbas_axisside>.wbas_frames>img.show {
+    display: block;
+}
+.wbas_content>.wbas_axisside>.wbas_frames>img.hide {
+    display: none;
+}
+
+/*.wbas_content>.wbas_axisside>img.wbas_loading {*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*background: url(loading.gif) no-repeat;*/
+    /*width: 32px;*/
+    /*height: 0;*/
+    /*padding-top: 32px;*/
+    /*border: 0;*/
+    /*left:0;*/
+    /*right:0;*/
+    /*margin:auto;*/
+    /*top:50%;*/
+/*}*/
+.wbas_content>.wbas_axisside>span {
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 30px;
+    color:#219edf;
+    text-align:center;
+    font-size: 12px;
+    left:0;
+    right:0;
+    margin:auto;
+    top:56%;
+}

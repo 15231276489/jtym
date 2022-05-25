@@ -1,0 +1,75 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; list-style: none; box-sizing: border-box; text-decoration: none; }
+
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+html { font-size: 62.5%; }
+
+body { font-family: "微软雅黑"; }
+
+img { vertical-align: middle; }
+
+.headerLeft a,.headerRight a{display: none;}/*后期更改*/
+
+header { z-index: 999; position: fixed; top: 0; left: 0; width: 100%; height: 40px; background: rgba(16,57,110,0.3); display: flex; justify-content: space-between;display: none; }
+header .headerLeft { display: flex; }
+header .headerLeft img { width: 40px; height: 40px; }
+header .headerLeft .logo { display: flex; flex-direction: column; justify-content: center; }
+header .headerLeft .logo img { width: 40px; height: 20px; }
+header .headerLeft .logo a { color: #FFFFFF; }
+header .headerRight { padding: 5px; box-sizing: border-box; }
+header .headerRight img { width: 30px; height: 30px; }
+
+@keyframes xz { /*执行动画*/
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
+.mp3 { width: 30px; height: 30px; position: fixed; bottom: 150px; right: 5px;  padding: 3px; box-sizing: border-box;transform: scale(1) }
+#music { animation: xz 10s linear infinite; /*自定义动画：名称 时间 速度（匀速）*/ animation-play-state: running;background: rgba(255, 255, 255, 0.4); border-radius: 50%;padding: 3px;box-sizing: border-box }
+.mp3 a img{margin-bottom: 10px;background: rgba(255, 255, 255, 0.4); border-radius: 50%;padding: 3px;box-sizing: border-box }
+
+.swiper-slide { background: url(../img/bg.jpg); background-size: 100%; }
+
+.cen { margin: 10px 0; }
+
+.navItem { width: 100%; display: flex; justify-content: space-around; }
+.navItem div { width: 22%; }
+.navItem div img { width: 100%; }
+.navItem div p { text-align: center; padding: 5px 0; background: rgba(0, 0, 0, 0.2); color: #ffffff; font-size: 12px; margin-top: 5px; }
+.navItem .navItem-on p { color: #ffcc99; }
+
+.navTex { width: 100%; padding: 20px; box-sizing: border-box; position: relative}
+.navTex img { display: none; }
+.navTex .navTex-on { display: block; }
+.navTex .hand{position: absolute;top:48px;right:24px;display: inline-block}
+
+.datu { background: url(../img/img.jpg) no-repeat;position: relative;margin-left: 35%;}
+.datu img {height: 130px; position: fixed; }
+.datu .a01-btn { top: 510px; left: 38%; }
+.datu .a02-btn { top: 530px; left: 40%; }
+.datu .a03-btn { top: 560px; left: 42%; }
+.datu .brh-btn { top: 380px; left: 50%; }
+.datu .nrh-btn { top: 430px; left: 63%; }
+.datu .hy-btn { top: 480px; left: 82%; }
+.datu .yf-btn { top: 760px; left: 56%; }
+
+
+/*底部切换*/
+footer { width: 100%; height: 60px; background: #ffffff; display: flex; justify-content: space-between; position: fixed; bottom: 0; left: 0; z-index: 999; }
+footer a { display: block; width: 20%; height: 100%; font-size: 1.2rem; color: #555454; text-align: center; padding: 0.5rem 0; }
+footer a div { margin: auto; width: 25px; height: 25px; margin-bottom: 5px; }
+footer a:nth-child(1) div { background: url(../img/footer/icon-1.png); background-size: 100%; }
+footer a:nth-child(2) div { background: url(../img/footer/icon-2.png); background-size: 100%; }
+footer a:nth-child(3) div { background: url(../img/footer/icon-3.png); background-size: 100%; }
+footer a:nth-child(4) div { background: url(../img/footer/icon-4.png); background-size: 100%; }
+footer a:nth-child(5) div { background: url(../img/footer/icon-5.png); background-size: 100%; }
+footer a:nth-child(1).footer-a-on div { background: url(../img/footer/icon-1-on.png); background-size: 100%; }
+footer a:nth-child(2).footer-a-on div { background: url(../img/footer/icon-2-on.png); background-size: 100%; }
+footer a:nth-child(3).footer-a-on div { background: url(../img/footer/icon-3-on.png); background-size: 100%; }
+footer a:nth-child(4).footer-a-on div { background: url(../img/footer/icon-4-on.png); background-size: 100%; }
+footer a:nth-child(5).footer-a-on div { background: url(../img/footer/icon-5-on.png); background-size: 100%; }
+footer .footer-a-on { color: #344eed; }
+
+#di{position: fixed;bottom: 10%;width: 100%;}
+#di img{margin-left:40%}
+
+/*# sourceMappingURL=index.css.map */
