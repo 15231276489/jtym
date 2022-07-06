@@ -27,6 +27,21 @@ function AddFavorite(title, url) {
     }
 }
 
+//服务介绍的页面跳转
+// szls1 = document.getElementById("szls1")
+
+// szls1.addEventListener("click", function() {
+//     location.href = "./zsmc/design.html";
+
+// });
+
+// szls1.addEventListener("click", function() {
+//     window.scrollTo({
+//         top: 700,
+//         behavior: "smooth"
+//     });
+// });
+
 function DY_scroll(wraper, prev, next, img, speed, or) {
     var wraper = $(wraper);
     var prev = $(prev);
@@ -162,6 +177,9 @@ var cp20_bg = document.getElementById("cp20")
 
 var cp21_bg = document.getElementById("cp21")
 var cp22_bg = document.getElementById("cp22")
+var cp23_bg = document.getElementById("cp23")
+var cp24_bg = document.getElementById("cp24")
+var cp25_bg = document.getElementById("cp25")
 
 cp1_bg.onmouseover = function() {
     this.style.backgroundImage = "url(./skin/images/blue_1_1.jpg)"
@@ -320,4 +338,27 @@ cp22_bg.onmouseover = function() {
 }
 cp22_bg.onmouseout = function() {
     this.style.backgroundImage = "url(./skin/images/blue_18.jpg)"
+}
+
+// eeeee
+cp23_bg.onmouseover = function() {
+    this.style.backgroundImage = "url(./skin/images/blue_syhj_1.jpg)"
+}
+cp23_bg.onmouseout = function() {
+    this.style.backgroundImage = "url(./skin/images/blue_syhj.jpg)"
+}
+
+cp24_bg.onmouseover = function() {
+    this.style.backgroundImage = "url(./skin/images/blue_yhyj_1.jpg)"
+}
+cp24_bg.onmouseout = function() {
+    this.style.backgroundImage = "url(./skin/images/blue_yhyj.jpg)"
+}
+
+//20220628
+cp25_bg.onmouseover = function() {
+    this.style.backgroundImage = "url(./skin/images/szp_2.jpg)"
+}
+cp25_bg.onmouseout = function() {
+    this.style.backgroundImage = "url(./skin/images/szp_1.jpg)"
 }
